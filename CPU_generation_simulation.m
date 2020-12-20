@@ -31,7 +31,7 @@ n = size(step, 2);
 
 avg = mean(step(:,:));
 
-%plot and drawings
+%plot and drawings, loglog might be better?
 plot(1:n, step);
 hold on
 plot(1:n, avg , 'x', 'color', 'g');
@@ -39,5 +39,5 @@ plot(1 + length(A), step(1,1 + length(A)), 'o')
 txt = '\leftarrow We are here.';
 text(1 + length(A),step(1,1 + length(A)),txt)
 xlabel('year')
-ylabel('% growth')
+ylabel('x times growth')
 title('simulation of the next N generations AMD CPUs')
